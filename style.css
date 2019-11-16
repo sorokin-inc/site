@@ -1,10 +1,39 @@
+  @font-face {
+    font-family: Bahnschrift;
+    src: url(12002.ttf);
+  }
 html {
-  font-family: "Tahoma";
+  font-family: Bahnschrift;
   user-select: none;
+  background: linear-gradient(to left top, #667eea, #764ba2);
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+input {
+  margin-top: 40px;
+  font-size: 36px;
+  padding: 5px;
+  background: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  color: white;
 }
 .submit {
-  background-color: aqua;
-  width: 100px;
+  display: block;
+  margin-top: 40px;
+  background-color: transparent;
+  width: auto;
   cursor: pointer;
-  border: 3px solid #000000;
+  border: 3px solid #ffffff;
+  text-align: center;
+  font-size: 28pt;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: white;
 }
