@@ -1,17 +1,11 @@
-function insert(num) {
-  document.form.textview.value =
-  document.form.textview.value + num;
-}
-function clean {
-  document.form.textview.value = "";
-}
-function back() {
-  var exp = document.form.textview.value;
-  document.form.textview.value = exp.substring(0,exp.length-1);
-}
-function equal() {
-  var exp = document.form.textview.value;
-  if(exp) {
-    document.form.textview.value = eval(exp);
-  }
+"use strict"
+function output() {
+  let a = document.form.a.value,
+   b = document.form.b.value,
+   c = document.form.c.value,
+   d = +a + +b + +c;
+   var elem = document.getElementById('hide');
+  alert(a + b + c);
+  document.form.view.value = d;
+  elem.style.display = 'none';
 }
