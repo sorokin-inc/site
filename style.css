@@ -1,39 +1,49 @@
-  @font-face {
-    font-family: Bahnschrift;
-    src: url(12002.ttf);
-  }
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 html {
-  font-family: Bahnschrift;
-  user-select: none;
-  background: linear-gradient(to left top, #667eea, #764ba2);
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-input {
-  margin-top: 40px;
-  font-size: 36px;
-  padding: 5px;
-  background: transparent;
-  border: 3px solid #ffffff;
-  border-radius: 10px;
-  color: white;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
 }
-.submit {
-  display: block;
-  margin-top: 40px;
-  background-color: transparent;
-  width: auto;
-  cursor: pointer;
-  border: 3px solid #ffffff;
-  text-align: center;
-  font-size: 28pt;
-  border-radius: 10px;
+ul li {
+    list-style: none;
 }
-h1 {
-  text-align: center;
-  color: white;
+ul li a {
+    position: relative;
+    display: block;
+    font-size: 10em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-decoration: none;
+    line-height: 1.2em;
+}
+ul li a:hover {
+    color: #ffffff;
+    -webkit-text-stroke: 1px #000000;
+    transition: 0.5s;
+
+}
+ul li a::before, ul li a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+ul li a:hover:before {
+    color: #f00;
+    z-index: 1;
+    transform: translate(10px, -10px);
+}
+ul li a:hover:after {
+    color: #0ff;
+    z-index: 2;
+    transform: translate(20px, -20px);
 }
