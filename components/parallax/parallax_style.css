@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+header h1 {
+    vertical-align: middle;
+    font-size: 4em;
+}
+header, header:before {
+    background: 50% 50% / cover;
+}
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(yuriy-garnaev-fcDnEf0TUV0-unsplash.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+section {
+    color: #fff;
+    position: relative;
+    background-color: #1c242b;
+    padding-top: 3em;
+    display: block;
+    padding: 3em;
+}
+section h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+}
+section p {
+    font-weight: 300;
+    line-height: 2em;
+    text-justify: unset;
+    font-size: 1.2em;
+}
