@@ -10,7 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000000;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 ul li {
     list-style: none;
