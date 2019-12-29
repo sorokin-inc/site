@@ -52,7 +52,7 @@ ul li a:after {
     left: -10px;
     height: 20px;
     width: 100%;
-    background: #b1b1b1;
+    background: #d0d0d0;
     transition: .5s;
     transform: rotate(0deg) skewX(-45deg);
 }
