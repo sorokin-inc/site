@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+html {
+    font-family: Poppins, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(208, 233, 238, 0.466);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block {
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    transition: 0.5s;
+}
+input {
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.block:hover {
+    background-color: rgb(216, 207, 207);
+    color: #000;
+}
+.style1 {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(104, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.style2 {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(0, 104, 5);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.style3 {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(0, 10, 104);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    transition: 0.5s;
+}
