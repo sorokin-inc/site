@@ -13,6 +13,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden; 
     font-family: 'Poppins', sans-serif;
+    filter: blur(10px);
 }
 header {
     box-sizing: border-box;
