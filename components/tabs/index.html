@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon">
+                <div class="iconBx active" data-id="content1">
+                    <img src="media/img1.png" width="200px">
+                </div>
+                <div class="iconBx" data-id="content2">
+                    <img src="media/img2.png" width="200px">
+                </div>
+                <div class="iconBx" data-id="content3">
+                    <img src="media/img3.png" width="200px">
+                </div>
+                <div class="iconBx" data-id="content4">
+                    <img src="media/img4.png" width="200px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentBx active" id="content1">
+                    <div>
+                        <div class="text">
+                            <h2>Google</h2>
+                            <p>After the postoperative check at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him.
+                                They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull 
+                                of the spherical chamber. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that
+                                completely covered the hull of the Villa bespeak a turning in, a denial of the bright void beyond the hull. The alarm 
+                                still oscillated, louder here, the rear wall dulling the roar of the Sprawl’s towers and ragged Fuller domes, dim figures 
+                                moving toward him in the dark. He’d taken the drug to blunt SAS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBx" id="content2">
+                    <div>
+                        <div class="text">
+                            <h2>Instagram</h2>
+                            <p>After the postoperative check at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him.
+                                They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull 
+                                of the spherical chamber. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that
+                                completely covered the hull of the Villa bespeak a turning in, a denial of the bright void beyond the hull. The alarm 
+                                still oscillated, louder here, the rear wall dulling the roar of the Sprawl’s towers and ragged Fuller domes, dim figures 
+                                moving toward him in the dark. He’d taken the drug to blunt SAS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBx" id="content3">
+                    <div>
+                        <div class="text">
+                            <h2>Facebook</h2>
+                            <p>After the postoperative check at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him.
+                                They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull 
+                                of the spherical chamber. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that
+                                completely covered the hull of the Villa bespeak a turning in, a denial of the bright void beyond the hull. The alarm 
+                                still oscillated, louder here, the rear wall dulling the roar of the Sprawl’s towers and ragged Fuller domes, dim figures 
+                                moving toward him in the dark. He’d taken the drug to blunt SAS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBx" id="content4">
+                    <div>
+                        <div class="text">
+                            <h2>Telegram</h2>
+                            <p>After the postoperative check at the clinic, Molly took him to the simple Chinese hollow points Shin had sold him.
+                                They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull 
+                                of the spherical chamber. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that
+                                completely covered the hull of the Villa bespeak a turning in, a denial of the bright void beyond the hull. The alarm 
+                                still oscillated, louder here, the rear wall dulling the roar of the Sprawl’s towers and ragged Fuller domes, dim figures 
+                                moving toward him in the dark. He’d taken the drug to blunt SAS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var iconBx = document.querySelectorAll('.iconBx');
+        var contentBx = document.querySelectorAll('.contentBx');
+
+        for (var i=0; i<iconBx.length; i++) {
+            iconBx[i].addEventListener('mouseover', function() {
+        for (var i=0; i<contentBx.length; i++) {
+            contentBx[i].className='contentBx';
+        }
+        document.getElementById(this.dataset.id).className = 'contentBx active';
+        for (var i=0; i<iconBx.length; i++) {
+            iconBx[i].className='iconBx';
+        }
+        this.className = 'iconBx active'
+    })
+}
+        </script>
+    </body>
+</html>
