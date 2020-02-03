@@ -18,6 +18,4 @@ function style1() {
 function showMsg() {
         alert(value);
         block.style.background = '#fff';
-
-       
 }
